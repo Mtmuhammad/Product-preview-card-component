@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2ebe3;
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+}
+
+.card {
+  width: 550px;
+  height: 100%;
+}
+.card-container {
+  display: flex;
+}
+.card-img {
+  background-image: url("../images/image-product-desktop.jpg");
+  background-size: cover;
+  width: 50%;
+  background-position: center center;
+  border-radius: 0.5rem 0 0 0.5rem;
+  filter: brightness(97%);
+}
+.card-info {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 27px;
+  padding-top: 20px;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.card-info_text {
+  font-size: 13px;
+  color: #6c7289;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.card-info_subtitle {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #6c7289;
+  letter-spacing: 4px;
+  font-size: 11px;
+}
+.card-info_title {
+  margin: 18px 0 23px;
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  font-size: 29px;
+  line-height: 1;
+}
+.card-info_prices {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.card-info_prices h2 {
+  color: #3c8067;
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+}
+.card-info_prices span {
+  text-decoration: line-through;
+  color: #6c7289;
+  margin-right: 35px;
+  font-size: 13px;
+}
+.card-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 14px;
+  background-color: #3c8067;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+}
+.card-btn:hover {
+  background-color: #1c232b;
+}
+.card-btn_icon {
+  height: 14.5px;
+  margin-right: 2px;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 350px;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-img {
+    background-image: url("../images/image-product-mobile.jpg");
+    background-size: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+    height: 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .card-info {
+    width: 100%;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  .card-info_prices span {
+    margin-right: 110px;
+  }
+  .card-info_text {
+    padding-right: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

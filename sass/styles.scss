@@ -1,0 +1,153 @@
+@use "./variables" as v;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: v.$cream;
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+}
+
+.card {
+  width: 550px;
+  height: 100%;
+
+  &-container {
+    display: flex;
+  }
+
+  &-img {
+    background-image: url("../images/image-product-desktop.jpg");
+    background-size: cover;
+    width: 50%;
+    background-position: center center;
+    border-radius: 0.5rem 0 0 0.5rem;
+    filter: brightness(97%);
+  }
+
+  &-info {
+    width: 50%;
+    background-color: v.$white;
+    padding: 27px;
+    padding-top: 20px;
+    border-radius: 0 0.5rem 0.5rem 0;
+
+    &_text {
+      font-size: 13px;
+      color: v.$dark-grayish-blue;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    &_subtitle {
+      text-transform: uppercase;
+      font-weight: 500;
+      color: v.$dark-grayish-blue;
+      letter-spacing: 4px;
+      font-size: 11px;
+    }
+
+    &_title {
+      margin: 18px 0 23px;
+      font-family: "Fraunces", serif;
+      font-weight: 800;
+      font-size: 29px;
+      line-height: 1;
+    }
+
+    &_prices {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      & h2 {
+        color: v.$dark-cyan;
+        font-family: "Fraunces", serif;
+        font-size: 30px;
+      }
+
+      & span {
+        text-decoration: line-through;
+        color: v.$dark-grayish-blue;
+        margin-right: 35px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  &-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: v.$white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 14px;
+    background-color: v.$dark-cyan;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+
+    &:hover {
+      background-color: v.$very-dark-blue;
+    }
+
+    &_icon {
+      height: 14.5px;
+      margin-right: 2px;
+    }
+  }
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+
+  & a {
+    color: v.$navy;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 350px;
+    &-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-img {
+      background-image: url("../images/image-product-mobile.jpg");
+      background-size: cover;
+      border-radius: 0.5rem 0.5rem 0 0;
+      height: 250px;
+      width: 100%;
+      background-repeat: no-repeat;
+    }
+
+    &-info {
+      width: 100%;
+      border-radius: 0 0 0.5rem 0.5rem;
+
+      &_prices span {
+        margin-right: 110px;
+      }
+
+      &_text {
+        padding-right: 10px;
+      }
+    }
+  }
+}
