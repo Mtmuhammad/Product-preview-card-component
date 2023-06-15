@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./images/Results_summary_component.png)
-![Mobile](./images/Results_summary_component_mobile.png)
+![Desktop](./images/Product_preview_card_component_desktop.png)
+![Mobile](./images/Product_preview_card_component_mobile.png)
 
 ### Links
 
